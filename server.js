@@ -72,6 +72,10 @@ app.post('/', (req, res) => {
     res.json({ status: "success" });
 });
 
+app.get('/',(req,res)=>{
+    res.json('welcome to my portfolio')
+})
+
 // Start server
 app.listen(5000, () => {
     console.log('Server is running on port 5000');
